@@ -1,0 +1,10 @@
+
+#root{ 
+    display: grid;
+    grid-template-rows: 1,2fr;
+    margin: auto;
+    border: 2px solid greenyellow;
+}
+#show{
+    border: 2px solid saddlebrown;
+}
