@@ -1,0 +1,33 @@
+#App{
+  width: 90%;
+  margin: auto;
+  background-color: #0e0e0e;
+  display:flex;
+  /* flex: 1; */
+  border-radius: 2px;
+  justify-content: space-around;
+}
+.left{
+  margin: auto;
+  color: aliceblue;
+}
+
+.middle{
+  /* display: flex; */
+  width: 200px;
+  margin: auto;
+  color: aliceblue;
+  /* border: 1px solid #c3c3c3; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.right{
+  margin: auto;
+  color: aliceblue;
+}
+.navbtn{
+  background-color: aqua;
+  border-radius: 20rem;
+  /* padding: 22px 20px; */
+}
