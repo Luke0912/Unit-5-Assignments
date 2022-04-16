@@ -1,0 +1,12 @@
+function App(data){
+    const cb= (value)=>{
+        console.log("hello",value)
+    }
+    return First(cb)
+}
+
+function First(cb){
+    const data = "test"
+
+    cb(data)
+}

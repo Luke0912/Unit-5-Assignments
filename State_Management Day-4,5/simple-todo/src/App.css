@@ -1,0 +1,16 @@
+html,
+body {
+  padding: 0;
+  margin: 1rem;
+  background-color: grey;
+}
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  /* width: 350px; */
+  /* background-color: rgb(174, 115, 42); */
+  margin: auto;
+  /* border-radius: 5px; */
+}

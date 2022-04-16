@@ -1,0 +1,40 @@
+.btn {
+  background-color: black;
+  color: #eee;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+.returndiv {
+  margin: auto;
+}
+.inputContainerOuter {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+.inputContainerInner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #95a5a6;
+  transform: translate(32%, 32%);
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  inset: 0;
+  appearance: none;
+}
+
+.completed {
+  background-color: lightgreen;
+}

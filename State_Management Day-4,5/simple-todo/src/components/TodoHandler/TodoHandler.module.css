@@ -1,0 +1,27 @@
+.todoHandler {
+  width: 350px;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.todoHandler__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.todoHandler__text span {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 100%;
+}
+.todoHandler__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
