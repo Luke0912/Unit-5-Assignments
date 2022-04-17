@@ -1,0 +1,27 @@
+.inputContainer{
+    margin-top: 10px;
+    width: 300px;
+    display:flex;
+    /* justify-content: space-between; */
+    border: radius 3px;;
+}
+.inputContainer__text{
+    width: 80%;
+}
+.input__text{
+    width: 100%;
+    border: none;
+    background-color:rgba(5, 142, 5, 0.619);
+    height: 40px;
+
+}
+.inputContainer__action{
+    width: 20%;
+}
+.inputbtn{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color:rgba(5, 142, 5, 0.619);
+}

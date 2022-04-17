@@ -1,11 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import InputHandler from "./components/InputHandler/InputHandler";
+
+import  TodoHandler  from "./components/TodoHandler/TodoHandler"
+
 
 function App() {
   return (
     <div className="App">
-      <InputHandler/>
+      <TodoHandler></TodoHandler>
     </div>
   );
 }

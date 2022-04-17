@@ -1,0 +1,12 @@
+*{
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+}
+.App{
+    width: 400px;
+    align-items: center;
+    margin: auto;
+    border:1px solid grey;
+    background-color: greenyellow;
+}
