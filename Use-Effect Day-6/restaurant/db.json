@@ -1,0 +1,139 @@
+{
+    "restaurants":[
+        
+        {
+            "id":1,
+            "rating":2,
+            "name":"lOREM",
+            "total_votes":12,
+            "reviews":119,
+            "cost_for_one": 200,
+            "categories": "North Indian",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": true,
+                "cash": true,
+                "upi": true
+            }
+        },        {
+            "id":2,
+            "rating":3,
+            "name":"lOREM",
+            "total_votes":121,
+            "reviews":1119,
+            "cost_for_one": 300,
+            "categories": "Continental",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": true,
+                "cash": true,
+                "upi": true
+            }
+        },
+        {
+            "id":3,
+            "rating":3,
+            "name":"lOREM",
+            "total_votes":13,
+            "reviews":114,
+            "cost_for_one": 220,
+            "categories": "South Indian",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": true,
+                "cash": true,
+                "upi": true
+            }
+        },
+        {
+            "id":4,
+            "rating":2,
+            "name":"lOREM",
+            "total_votes":12,
+            "reviews":119,
+            "cost_for_one": 200,
+            "categories": "North Indian",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": true,
+                "cash": true,
+                "upi": true
+            }
+        },
+        {
+            "id":5,
+            "rating":4,
+            "name":"lOREM",
+            "total_votes":62,
+            "reviews":145,
+            "cost_for_one": 300,
+            "categories": "North Indian",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": true,
+                "cash": true,
+                "upi": true
+            }
+        },
+        {
+            "id":6,
+            "rating":4.2,
+            "name":"lOREM",
+            "total_votes":52,
+            "reviews":159,
+            "cost_for_one": 300,
+            "categories": "North Indian",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": true,
+                "cash": false,
+                "upi": true
+            }
+        },
+        {
+            "id":7,
+            "rating":4.3,
+            "name":"lOREM",
+            "total_votes":62,
+            "reviews":116,
+            "cost_for_one": 500,
+            "categories": "North Indian",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": true,
+                "cash": false,
+                "upi": true
+            }
+        },
+        {
+            "id":8,
+            "rating":4.2,
+            "name":"lOREM",
+            "total_votes":12,
+            "reviews":118,
+            "cost_for_one": 600,
+            "categories": "North Indian",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": true,
+                "cash": false,
+                "upi": true
+            }
+        },
+        {
+            "id":9,
+            "rating":4.2,
+            "name":"lOREM",
+            "total_votes":125,
+            "reviews":149,
+            "cost_for_one": 700,
+            "categories": "North Indian",
+            "image":"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+            "payment_methods": {
+                "card": false,
+                "cash": true,
+                "upi": true
+            }
+        }
+    ]
+}

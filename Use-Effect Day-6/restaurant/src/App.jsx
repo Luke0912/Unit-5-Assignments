@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { Timer } from './components/Timer';
+import { RestaurantDetails } from './components/RestaurantDetailsHandler/RestaurantDetailsHandler';
 
 function App() {
   return (
     <div className="App">
-      <Timer/>
+      <RestaurantDetails/>
     </div>
   );
 }
