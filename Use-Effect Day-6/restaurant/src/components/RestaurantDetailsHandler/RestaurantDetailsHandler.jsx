@@ -14,34 +14,37 @@ export const RestaurantDetails = () => {
     setData(data);
   };
   const handleSort = (sortBy) => {
-      let nrestaurants = [...data]
-        nrestaurants.sort((a, b) => {
-            return b[sortBy] < a[sortBy] ? 1 : -1;
-          });
+    let nrestaurants = [...data];
+    nrestaurants.sort((a, b) => {
+      return b[sortBy] < a[sortBy] ? 1 : -1;
+    });
     setData(nrestaurants);
     // console.log(nrestaurants);
   };
-  const handleCard = ()=>{
-    let cardRestaurants = [...data]
-    if(cardRestaurants.payment_methods.card===true) {
-        setData(cardRestaurants) 
-        console.log(cardRestaurants) 
+  const handleCard = () => {
+    let cardRestaurants = [...data];
+    let newarr = [];
+    for (var i = 0; i < cardRestaurants.length; i++) {
+      if (cardRestaurants[i].payment_methods.card === true) {
+        newarr.push(cardRestaurants[i]);
+        console.log(cardRestaurants);
+      }
     }
-    
-  }   
-  
+    setData(newarr);
+  };
+
   return (
     <>
-    <div>
+      <div>
         <button onClick={handleCard}>Only Card</button>
         {/* <button onClick={handleCash}>Only Cash</button>
         <button onClick={handleAll}>All</button> */}
-    </div>
+      </div>
       <div>
         <select
           className="sortby"
           onChange={(e) => handleSort(e.target.value)}
-        //   onChange={(e) => console.log(e.target.value)}
+          //   onChange={(e) => console.log(e.target.value)}
         >
           <option value="1">Above 1</option>
           <option value="2">Above 2</option>
