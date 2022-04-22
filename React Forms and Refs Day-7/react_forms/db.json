@@ -1,0 +1,62 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "Name": "shubham",
+      "Age": 26,
+      "Address": "qqwer",
+      "Department": "abc",
+      "Salary": 123,
+      "marital_state": "married"
+    },
+    {
+      "Name": "Name",
+      "Age": "Age",
+      "Address": "Address",
+      "Department": "Department",
+      "Salary": "Salary",
+      "marital_state": " marital_state",
+      "id": 2
+    },
+    {
+      "Name": "shubham ",
+      "Age": "",
+      "Address": "qwerty",
+      "Department": "auto",
+      "Salary": "123456",
+      "marital_state": "",
+      "age": "122",
+      "MaritalStatus": "unmarried",
+      "id": 3
+    },
+    {
+      "Name": "",
+      "Age": "",
+      "Address": "",
+      "Department": "",
+      "Salary": "",
+      "marital_state": "",
+      "id": 4
+    },
+    {
+      "Name": "",
+      "Age": "",
+      "Address": "",
+      "Department": "",
+      "Salary": "",
+      "marital_state": "",
+      "id": 5
+    },
+    {
+      "Name": "qwe",
+      "Age": "",
+      "Address": "weew",
+      "Department": "auto",
+      "Salary": "12345678",
+      "marital_state": "",
+      "age": "1232",
+      "MaritalStatus": "unmarried",
+      "id": 6
+    }
+  ]
+}
