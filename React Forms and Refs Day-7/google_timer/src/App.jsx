@@ -1,68 +1,47 @@
-import "./App.css";
-import { useEffect, useRef, useState } from "react";
+import { useState , useEffect } from 'react';
+import './App.css'
 
-function App() {
-  const [milisecond, setMilisecond] = useState(0);
-  const [second, setSecond] = useState(0);
-  const [minute, setMinute] = useState(0);
-
-  const miliRef = useRef(null);
+const App = () => {
+  const [time, setTime] = useState(0);
+  const [timerOn, setTimerOn] = useState(false);
 
   useEffect(() => {
-    console.log("one");
-    handleTime();
-  }, [minute, second]);
+    let interval = null;
 
-  const handleTime = () => {
-    miliRef.current = setInterval(() => {
-      setMilisecond((p) => {
-        if (p >= 100) {
-          clearInterval(miliRef.current);
-          if (p >= 100) {
-            clearInterval(miliRef.current);
-            setSecond(second + 1);
-          }
-          if (second >= 60) {
-            clearInterval(miliRef.current);
-            setSecond(0);
-            setMinute(minute + 1);
-          }
-          return 0;
-        }
-        return p + 1;
-      });
-    }, 10);
-  };
-  const startTimer = () => {
-    handleTime();
-  };
+    if (timerOn) {
+      interval = setInterval(() => {
+        setTime((prevTime) => prevTime + 10);
+      }, 10);
+    } else if (!timerOn) {
+      clearInterval(interval);
+    }
+
+    return () => clearInterval(interval);
+  }, [timerOn]);
+
   return (
-    <div className="App">
-      <div className="maint">
-        <div className="m">{minute}</div>
-        <div className="s">{second}</div>
-        <div className="ms">{milisecond}</div>
+    <div className="Timers">
+      <h2>Stopwatch</h2>
+      <div id="display">
+        <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+        <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
+        <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
       </div>
-      <button
-        onClick={() => {
-          clearInterval(miliRef.current);
-        }}
-      >
-        Pause
-      </button>
-      <button onClick={startTimer}>start</button>
-      <button
-        onClick={() => {
-          clearInterval(miliRef.current);
-          setMilisecond(0);
-          setSecond(0);
-          setMinute(0);
-        }}
-      >
-        reset
-      </button>
+
+      <div id="buttons">
+        {!timerOn && time === 0 && (
+          <button onClick={() => setTimerOn(true)}>Start</button>
+        )}
+        {timerOn && <button onClick={() => setTimerOn(false)}>Stop</button>}
+        {!timerOn && time > 0 && (
+          <button onClick={() => setTime(0)}>Reset</button>
+        )}
+        {!timerOn && time > 0 && (
+          <button onClick={() => setTimerOn(true)}>Resume</button>
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
