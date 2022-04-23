@@ -1,9 +1,16 @@
-import { useState , useEffect } from 'react';
-import './App.css'
+import { useState, useEffect, useRef } from "react";
+import "./App.css";
 
 const App = () => {
   const [time, setTime] = useState(0);
   const [timerOn, setTimerOn] = useState(false);
+  const [counter, setCounter] = useState(0);
+
+  console.log("Counter is initally:", counter)
+  console.log(time)
+  // let x = 1
+  // console.log("X is initally:", x)
+  // let interval = useRef(null);
 
   useEffect(() => {
     let interval = null;
@@ -12,12 +19,18 @@ const App = () => {
       interval = setInterval(() => {
         setTime((prevTime) => prevTime + 10);
       }, 10);
+      console.log(interval);
     } else if (!timerOn) {
       clearInterval(interval);
     }
 
     return () => clearInterval(interval);
   }, [timerOn]);
+
+  const handleCounter = () => {
+    setCounter(counter+1)
+    // console.log("Counter is changed to:", counter);
+  };
 
   return (
     <div className="Timers">
@@ -39,6 +52,8 @@ const App = () => {
         {!timerOn && time > 0 && (
           <button onClick={() => setTimerOn(true)}>Resume</button>
         )}
+        <h3>Counter:{counter}</h3>
+        <button onClick={handleCounter}>Activate</button>
       </div>
     </div>
   );
